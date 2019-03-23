@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <Button
+        android:id="@+id/tuttonBackListOrder"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/textViewLogoOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_red"
+        android:gravity="center"
+        android:text="@string/order"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dp_20"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewHotDeal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:scaleType="fitXY"
+        android:src="@drawable/hotdeal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogoOrder"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewListOrders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHotDeal"
+        >
+    </android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>

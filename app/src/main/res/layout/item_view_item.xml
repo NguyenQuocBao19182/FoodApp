@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_5">
+
+    <ImageView
+        android:id="@+id/imageViewItem"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_80"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_food_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNameItemDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:maxLines="2"
+        android:text="Tui deo cheo nam (232032)"
+        android:textColor="@color/color_black"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNhaCungCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cung cap boi asaquakrari"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewNameItemDetail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameItemDetail" />
+
+    <TextView
+        android:id="@+id/textViewIdItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HDDFKWEWEW WEWWEJJKK"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewNhaCungCap"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNhaCungCap" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="34.000"
+        android:textColor="#EB0518"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewIdItem"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdItem" />
+
+    <TextView
+        android:id="@+id/textViewX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="x"
+        android:textColor="@color/color_black"
+        app:layout_constraintLeft_toRightOf="@+id/textViewPrice"
+        app:layout_constraintTop_toTopOf="@+id/textViewPrice" />
+
+    <TextView
+        android:id="@+id/textViewItemDetailSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="3"
+        android:textColor="@color/color_black"
+        app:layout_constraintLeft_toRightOf="@+id/textViewX"
+        app:layout_constraintTop_toTopOf="@+id/textViewX" />
+
+
+</android.support.constraint.ConstraintLayout>

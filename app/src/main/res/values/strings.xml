@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="user_name">User Name</string>
+    <string name="password">PassWord</string>
+    <string name="pass_word">Password</string>
+    <string name="order">Orders</string>
+    <string name="login">Login</string>
+    <string name="Donhang">Đơn Hàng</string>
+</resources>
